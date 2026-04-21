@@ -1,0 +1,9 @@
+
+curl -X POST http://127.0.0.1:8000/api/core/test/ping \
+  -H "Content-Type: application/json" \
+  -d '{"message": "hello from wai"}'
+
+
+curl -X GET http://localhost:8000/api/core/test/send-email \
+  -H "Content-Type: application/json" | jq
+  
